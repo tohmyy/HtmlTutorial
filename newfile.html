@@ -15,6 +15,7 @@
                 <li><a href="#recipes"> Recipe Section</a></li>
                 <li><a href="#random-names">Random Names Section</a></li>
                 <li><a href="#diagram">Images Section</a></li>
+                <li><a href="#timetable">Timetable Section</a></li>
             </ul>
 
         </nav>     
@@ -49,7 +50,10 @@
 <a href="http://3.bp.blogspot.com/-VZ_QUJzgH2Q/Vh1TorDAwDI/AAAAAAABe7I/ZNUj0m0H9b4/s1600/03-funny-gif-172.gif">
     <img src="http://3.bp.blogspot.com/-VZ_QUJzgH2Q/Vh1TorDAwDI/AAAAAAABe7I/ZNUj0m0H9b4/s1600/03-funny-gif-172.gif" alt="HTML tutorial" style="width:159px;height:150px;"></a>
 </section>
-<section>
+
+<br>
+
+<section id="timetable">
     <h2>Look at how my day usually goes</h2>
     <table>
         <caption>Daily Events</caption>
@@ -95,6 +99,69 @@
         </details>
     </aside>
 </section>
+
+<hr>
+<article id="contact">
+    <h2>Contact Me</h2>
+    <p>Please send us feedback concerning our products</p>
+    <fieldset>
+        <legend>Contact Us Form</legend>
+    <form action="https://httpbin.org/get" method="get">
+        <Fieldset><legend>Personal Info</legend>
+            <p>
+                <label for="firstName">Firstname:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="James" autocomplete="on" required>
+            </p>
+        
+        <p>
+        <label for="lastName">Lastname:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="St. Patrick" autocomplete="on" required>
+        </p>
+        <p>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="8133197235" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+        </p>
+    </Fieldset>
+        <label for="feedbackType">Feedback Type:</label>
+        <select name="feedbackType" id="feedbackType">
+            <option value="complaint">Complaint</option>
+            <option value="feedback" selected>Feedback</option>
+        </select>
+        <fieldset>
+            <legend>Please rate us based on your satisfaction of our services</legend>
+            <p>
+                <input type="radio" name="rating" id="poor" value="poor">
+                <label for="poor">Poor</label>
+            </p>
+            <p>
+                <input type="radio" name="rating" id="good" value="good">
+                <label for="good">Good</label>
+            </p>
+            <p>
+                <input type="radio" name="rating" id="veryGood" value="veryGood">
+                <label for="veryGood">Very Good</label>
+            </p>
+            <p>
+                <input type="radio" name="rating" id="excellent" value="excellent">
+                <label for="excellent">Excellent</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Your Message To Us</legend>
+            <p>
+                <label for="thoughts">Your Message:</label>
+                <br>
+                <textarea name="thoughts" id="thoughts" cols="120" rows="35" placeholder="Pen Down Your Thoughts About Us"></textarea>
+            </p>
+        </fieldset>
+        <p>
+        <button type="submit" id="submit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        <button type="reset" id="reset">Reset</button>
+        </p>
+    </form>
+</fieldset>
+</article>
 </main>
     </body>
 </html>
