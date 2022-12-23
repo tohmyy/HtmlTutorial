@@ -5,30 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="newfile.css" type="text/css">
 </head>
-<body>
-    <header><h1>Fried Rice Ingredients</h1>
-        <ul>
-            <li>Spice</li>
-            <li>Rice</li>
-            <li>Vegetables</li>
-            <li>Coleslaw<i>(optional)</i></li>
-            
-        </ul>
+<body title="Learning Html">
+    <header>
+        <nav aria-label="primary-navigation">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#recipes"> Recipe Section</a></li>
+                <li><a href="#random-names">Random Names Section</a></li>
+                <li><a href="#diagram">Images Section</a></li>
+            </ul>
+
+        </nav>     
     </header>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa autem voluptas quos possimus minus similique, quaerat accusamus vel? Fugiat, excepturi.</p>
-    <p><code></code>&lt;h1&gt;My First Webpage!&lt;/h1&gt;</code></p>
-    <ul>
-        <li>Sarah Banks</li>
-        <li>Michael Jordan<abbr title="Michael Jordan"> (MJ)</abbr></li>
-        <li>Reach me via <a href="mailto:tohmi02@gmail.com">email</a></li>
-    </ul>
-    <p>Download a Diagram <a href="20200525_154721.png">Illustrating Electrons</a><i> (Physics)</i></p>
+    <hr>
+    <main>
+        <section id="recipes">
+            <h1>Fried Rice Ingredients</h1>
+            <ul>
+                <li>Spice</li>
+                <li>Rice</li>
+                <li>Vegetables</li>
+                <li>Coleslaw<i>(optional)</i></li>   
+            </ul>
+            <hr>
+        </section>
+        <section id="random-names">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa autem voluptas quos possimus minus similique, quaerat accusamus vel? Fugiat, excepturi.</h2>
+            <p><code>&lt;h1&gt;My First Webpage!&lt;/h1&gt;</code></p>
+            <ul>
+                <li>Sarah Banks</li>
+                <li>Michael Jordan<abbr title="Michael Jordan"> (MJ)</abbr></li>
+                <li>Reach me via <a href="mailto:tohmi02@gmail.com">email</a></li>
+            </ul>
+        </section>
+    <hr>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section id="diagram">
+    <h2>Download a Diagram <a href="20200525_154721.png" title="Two Hamsters">Illustrating Electrons</a><i> (Physics)</i></h2>
+
     
 <a href="http://3.bp.blogspot.com/-VZ_QUJzgH2Q/Vh1TorDAwDI/AAAAAAABe7I/ZNUj0m0H9b4/s1600/03-funny-gif-172.gif">
-    <img src="http://3.bp.blogspot.com/-VZ_QUJzgH2Q/Vh1TorDAwDI/AAAAAAABe7I/ZNUj0m0H9b4/s1600/03-funny-gif-172.gif" alt="HTML tutorial" style="width:159px;height:150px;">
-</a>
-
+    <img src="http://3.bp.blogspot.com/-VZ_QUJzgH2Q/Vh1TorDAwDI/AAAAAAABe7I/ZNUj0m0H9b4/s1600/03-funny-gif-172.gif" alt="HTML tutorial" style="width:159px;height:150px;"></a>
+</section>
+<section>
+    <h2>Look at how my day usually goes</h2>
+    <table>
+        <caption>Daily Events</caption>
+        <thead>
+            <tr>
+            <th colspan="3">Timetable</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Morning</th>
+            <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+            </td>
+            <td>Attend Classes</td>
+        </tr>
+        <tr>
+            <th scope="row">Afternoon</th>
+            <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+            </td>
+            <td>Eat Lunch</td>
+        </tr>
+        <tr>
+            <th scope="row">Night</th>
+            <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+            </td>
+            <td>Play Basketball</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"> Total Events = 3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <aside>
+        <details>
+            <summary>Guess what i studied in the university?</summary>
+            <p>I Majored in Computer Science!</p>
+        </details>
+    </aside>
+</section>
+</main>
     </body>
 </html>
 
